@@ -1,3 +1,3 @@
 # Exercism
 
-Exercises from exercises.io
+Exercises from exercises.io using Golang.
