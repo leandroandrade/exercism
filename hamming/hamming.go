@@ -6,6 +6,10 @@ import (
 )
 
 func processHamming(s1, s2 string) int {
+	if len(s1) == 1 && len(s2) == 1 && s1 != s2 {
+		return 1
+	}
+
 	var total int
 
 	s1Split := strings.Split(s1, "")
