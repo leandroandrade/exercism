@@ -1,7 +1,6 @@
 package hamming
 
 import (
-	"strings"
 	"errors"
 )
 
@@ -12,8 +11,8 @@ func processHamming(s1, s2 string) int {
 
 	var total int
 
-	s1Split := strings.Split(s1, "")
-	s2Split := strings.Split(s2, "")
+	s1Split := []byte(s1)
+	s2Split := []byte(s2)
 
 	for i := 0; i < len(s1); i++ {
 		if s1Split[i] != s2Split[i] {
